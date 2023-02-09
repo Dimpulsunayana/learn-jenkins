@@ -8,5 +8,11 @@ steps{
  echo 'Hello Dimpuldimmi'
 }
 }
+
+post{
+always{
+echo 'sending mail'
+}
+}
 }
 }
