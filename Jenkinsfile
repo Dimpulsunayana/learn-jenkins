@@ -5,6 +5,7 @@ pipeline{
             steps{
                 script{
                      env.x="dimmi"
+                    //env.x is called environment variable which helps to access the variable in all stages
                     def y=10
 
                     print "x=${x}"
