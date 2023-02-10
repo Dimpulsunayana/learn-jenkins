@@ -17,11 +17,11 @@ pipeline{
                     print x
                 }
             }
-            stage('hello1'){
-                steps{
-                    script{
-                        print x
-                    }
+        }
+        stage('hello1'){
+            steps{
+                script{
+                    print x
                 }
             }
         }
