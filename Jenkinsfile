@@ -1,12 +1,11 @@
 pipeline {
-agent {
-label 'dimpul'
-}
+agent any
 
 stages{
  stage('hello'){
   steps{
     script{
+
     def x="dimmi"
     def y=10
 
