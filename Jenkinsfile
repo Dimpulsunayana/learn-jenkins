@@ -4,7 +4,7 @@ pipeline{
         stage('hello'){
             steps{
                 script{
-                    def x="dimmi"
+                     env.x="dimmi"
                     def y=10
 
                     print "x=${x}"
@@ -12,6 +12,16 @@ pipeline{
 
                     print x
                     print y
+                }
+                script{
+                    print x
+                }
+            }
+            stage('hello1'){
+                steps{
+                    script{
+                        print x
+                    }
                 }
             }
         }
