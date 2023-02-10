@@ -6,8 +6,8 @@ label 'dimpul'
 stages{
  stage('hello'){
   steps{
-    def x=dimmi
-    def y=10
+    def x="dimmi"
+    def y="10"
 
     print "x=${x}"
     print "y=${y}"
