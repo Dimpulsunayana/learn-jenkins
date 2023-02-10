@@ -31,4 +31,4 @@
 
 
 @Library('Roboshop') _
-ex()
+ex.dim()
