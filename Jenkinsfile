@@ -2,30 +2,21 @@ pipeline {
 agent {
 label 'dimpul'
 }
+
 stages{
-stage('Hello'){
-steps{
- echo 'Hello Dimpuldimmi'
-}
-}
+ stage('hello'){
+  steps{
+    def x=dimmi
+    def y=10
 
-stage('Hello1'){
-steps{
- echo 'Hello sunnu'
-}
-}
+    print "x=$(x)"
+    print "y=$(y)"
 
-stage('Hello2'){
-steps{
- echo 'Hello giri'
-}
-}
+    print x
+    print y
+  }
 
-}
+ }
 
-post{
-always{
-echo 'sending mail'
-}
 }
 }
