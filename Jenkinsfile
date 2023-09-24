@@ -32,5 +32,5 @@
 
 @Library('Roboshop') _
 
-env.abc="dimpuldimmi"
+env.abc="dimpul"
 ex.dim()
